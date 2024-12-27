@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Zestic\CorsMiddleware;
 
-use Tuupola\Middleware\CorsMiddleware;
 use Zestic\CorsMiddleware\Factory\CorsMiddlewareFactory;
+use Zestic\Middleware\CorsMiddleware;
 
 class ConfigProvider
 {
@@ -13,7 +13,6 @@ class ConfigProvider
     {
         return [
             'dependencies' => $this->getDependencies(),
-
         ];
     }
 
